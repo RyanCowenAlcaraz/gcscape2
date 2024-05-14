@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+   scroll-behavior: smooth;
+}
+body {
+   background-image: url('pic/gc1.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;  
+   font-family: Arial, sans-serif;
+   margin-left: auto;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+
+.header {
+   position: sticky; 
+   top: 0; 
+   z-index: 1000; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 5px;
+   border-bottom: hidden;
+   background-color: rgba(255, 255, 255, 0.8); 
+   margin: auto;
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   width: 60px;
+   height: 60px;
+   background-image: url('pic/gclogo.png');
+   background-size: cover;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #333;
+   font-size: 12px;
+   margin-right: 10px;
+}
+
+.logo2 {
+   width: 60px; 
+   height: 60px; 
+   background-image: url('pic/gcccslogo.png'); 
+   background-size: cover;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #333;
+   font-size: 12px;
+   margin-left: auto; 
+}
+
+.nav {
+   display: flex;
+   list-style: none;
+}
+
+.nav li {
+   margin: 0 20px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: #333;
+   font-size: 14px;
+}
+
+.sign-in {
+   background-color: #ddd;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.sign-in:hover {
+   background-color: rgb(0, 0, 0);
+   border: 1px solid black;
+   color: white;
+}
+
+.hero {
+   width: 100%;
+   height: 68vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+}
+
+.hero-image {
+   width: 70%;
+   height: 70%; 
+   background-color: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   border-collapse: collapse;
+   border: hidden;
+   border-radius: 100px;
+   background-image: url('pic/gcgroup.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.cta {
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+   margin-top: 50px;
+}
+
+.cta button {
+   background-color: #ddd;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.cta button:hover {
+   background-color: rgb(0, 0, 0);
+   border: 1px solid black;
+   color: white;
+}
+
+h2 {
+   font-size: 70px;
+   font-family: serif;
+   color: transparent;
+   text-align: center;
+   animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+   0% {
+   background: linear-gradient(#008000, #00FF00);
+   -webkit-background-clip: text;
+   }
+
+   100% {
+   background: linear-gradient(#008000, #ff8000);
+   -webkit-background-clip: text;
+   }
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; 
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+   text-align: center;
+   line-height: 100%;
+}
+.container a{
+   text-decoration: none;
+   color:#ff8000;
+   text-align: center;
+   font-weight: bold;
+}
+
+.container div {
+   height: 370px;
+   width: 335px;
+   background-color: rgb(93, 93, 132);
+   margin: 60px;
+   text-align: center;
+   border-radius: 30px;
+}
+
+.herop{
+margin-right: 0;
+padding: 0;
+height: 78vh;
+text-align:center;
+color:#d3750b;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+
+p {
+   text-shadow: 2px 2px 2px #000000;
+}
+
+.btn{
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.mod1{
+   background-image: url('pic/impic.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.mod2{
+   background-image: url('pic/comppic.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.mod3{
+   background-image: url('pic/hcipic.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+   <div id="home" class="header">
+       <div class="logo-container">
+           <div class="logo"></div>
+           <div class="logo2"></div> 
+       </div>
+       <ul class="nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#">Help & Support</a></li>
+           <li><a href="#">Sign Up</a></li>
+       </ul>
+       <button class="sign-in">Sign In</button>
+   </div>
+   <div class="hero">
+       <div class="hero-image">
+           <div class="hero-text">
+               <h2>Welcome to GCScapes</h2>
+           </div>
+       </div>
+   </div>
+   <div class="cta">
+       <button id="explore-modules">Explore Modules</button>
+   </div>
+
+
+   <div id="container" class="container"> 
+      <a href="InfoMngmt.html">
+          <div class="mod1">INFORMATION MANAGEMENT</div>
+      </a>
+      <a href="ComProg2.html">
+          <div class="mod2">COMPUTER PROGRAMMING</div>
+      </a>
+      <a href="HCI.html">
+          <div class="mod3">INTRODUCTION TO HUMAN COMPUTER INTERACTION</div>
+      </a>
+  </div>
+  
+   <div class="hero">
+        <div class="hero-image2">
+            <div class="herop">
+               <h2 id="about">ABOUT</h2>
+                <p><b>GCscape</b></p>
+                <br>
+                <p><b> is a prototype navigating educational platform that is use to navigates school learnings whether if it's online. This is a combination of in-person and online learning. We find them frequently used in higher education because it's a tool that allows learning to continue even after students have left the classroom. This indicates the primary focus of the prototype. It suggests that the project aims to improve how users interact with and move through educational platforms. This could involve enhancing user interfaces, streamlining access to resources, improving search functionality, or any other aspect related to making these platforms more user-friendly and efficient.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('explore-modules').addEventListener('click', function() {
+            document.getElementById('container').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+
+</body>
+</html>
